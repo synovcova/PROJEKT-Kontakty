@@ -5,6 +5,7 @@ html { box-sizing: border-box; }
 body {
 	font-family: sans-serif;
 	font-size: 14px;
+	text-align: center;
 }
 
 /* ---------------------------------------------------- */
@@ -41,21 +42,22 @@ PC      960px a víc
 	.zena{
 		display: flex;
 		flex: 50%;
-		flex-basis: 50%;
+		flex-basis: 25%;
 	}
 
 	.foto {
-		display:flex;
-		flex: 50%;
+	
+		flex: 30%;
 	}
 
 	.popis {
 		display:flex;
 		flex: 50%;
+		display: block;
 	}
 }
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 840px){
 	
 	.kontakty{
 		flex: 1 1 calc(100% / 4);
@@ -63,18 +65,20 @@ PC      960px a víc
 	}
 
 	.zena{
-		flex: 1 1 calc(100% / 4);
-
-		
+		display: block;
+		text-align: center;
 	}
 
 	.foto {
-		flex: 100%;		
-		flex-wrap:wrap;
+		flex: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.popis {
-		flex: 100%;
+		display: block;
+
 	}
+
 
 }
